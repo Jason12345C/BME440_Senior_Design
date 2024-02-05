@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-        debugShowCheckedModeBanner: false, 
+        debugShowCheckedModeBanner: false,
         title: "Rise Stride",
-        theme: ThemeData(primaryColor: ThemeColors.primaryColor1);
-        fontFamily: "Poppins",
+        theme: ThemeData(
+          primaryColor: ThemeColors.primaryColor1,
+          fontFamily: "Poppins",
+        ),
         home: const OnBoardingView()); //MaterialApp
   }
 }
