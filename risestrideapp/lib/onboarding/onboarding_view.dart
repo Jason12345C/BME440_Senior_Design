@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:risestride/Login/login.dart';
 import 'package:risestride/common/colors_extension.dart';
 import 'package:risestride/onboarding/onboarding_page.dart';
 
@@ -83,10 +84,17 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                         if (selectPage < pageArr.length) {
                           //go to next onboarding view
                           selectPage = selectPage + 1;
-                          controller.jumpToPage(selectPage);
+                          controller.animateToPage(selectPage,
+                              duration: const Duration(milliseconds: 300),
+                              curve: Curves.bounceInOut);
+                          // controller.jumpToPage(selectPage);
                           setState(() {});
                         } else {
                           //welcome page
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const LoginPage()));
                         }
                       }),
                 ),
