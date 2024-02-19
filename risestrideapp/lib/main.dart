@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:risestride/onboarding/onboarding_view.dart';
-import 'package:risestride/pages/home.dart';
+// import 'package:risestride/pages/home.dart';
 import 'common/colors_extension.dart';
 
 void main() {
@@ -46,73 +46,72 @@ class Start extends StatelessWidget {
               ),
               const SizedBox(width: 100, height: 100),
               Center(
-                  child: Container(
-                      child: Padding(
-                          padding: EdgeInsets.only(top: 100),
-                          child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.of(context).push(_createRoute());
-                              },
-                              style: ElevatedButton.styleFrom(
-                                  shadowColor: Colors.transparent,
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20))),
-                              child: Ink(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(30.0)),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topLeft,
-                                          end: Alignment(0.2, 1),
-                                          colors: <Color>[
-                                            ThemeColors.primaryColor2,
-                                            ThemeColors.primaryColor1,
-                                          ])),
-                                  child: Container(
-                                      constraints: const BoxConstraints(
-                                          maxWidth: 160,
-                                          minWidth: 80.0,
-                                          minHeight: 38.0),
-                                      alignment: Alignment.center,
-                                      child: const Text("Let's Get Started",
-                                          style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold))))
-                              // child: Container(
-                              //     width: media.width * .6,
-                              //     height: media.height * .05,
-                              //     decoration: BoxDecoration(
-                              //         gradient: LinearGradient(
-                              //             begin: Alignment.topLeft,
-                              //             end: Alignment(0.2, 1),
-                              //             colors: <Color>[
-                              //               ThemeColors.primaryColor2,
-                              //               ThemeColors.primaryColor1,
-                              //             ]),
-                              //         borderRadius: BorderRadius.circular(20)),
-                              //     child: const Padding(
-                              //       padding: EdgeInsets.all(8.0),
-                              //       child: Text("Let's Get Started!",
-                              //           textAlign: TextAlign.center,
-                              //           style: TextStyle(
-                              //               fontSize: 15, fontWeight: FontWeight.bold)),
-                              //     ))
-                              ))))
+                  child: Padding(
+                      padding: const EdgeInsets.only(top: 100),
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(context).push(_createRoute());
+                          },
+                          style: ElevatedButton.styleFrom(
+                              shadowColor: Colors.transparent,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20))),
+                          child: Ink(
+                              decoration: BoxDecoration(
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(30.0)),
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topLeft,
+                                      end: const Alignment(0.2, 1),
+                                      colors: <Color>[
+                                        ThemeColors.primaryColor2,
+                                        ThemeColors.primaryColor1,
+                                      ])),
+                              child: Container(
+                                  constraints: const BoxConstraints(
+                                      maxWidth: 160,
+                                      minWidth: 80.0,
+                                      minHeight: 38.0),
+                                  alignment: Alignment.center,
+                                  child: const Text("Let's Get Started",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold))))
+                          // child: Container(
+                          //     width: media.width * .6,
+                          //     height: media.height * .05,
+                          //     decoration: BoxDecoration(
+                          //         gradient: LinearGradient(
+                          //             begin: Alignment.topLeft,
+                          //             end: Alignment(0.2, 1),
+                          //             colors: <Color>[
+                          //               ThemeColors.primaryColor2,
+                          //               ThemeColors.primaryColor1,
+                          //             ]),
+                          //         borderRadius: BorderRadius.circular(20)),
+                          //     child: const Padding(
+                          //       padding: EdgeInsets.all(8.0),
+                          //       child: Text("Let's Get Started!",
+                          //           textAlign: TextAlign.center,
+                          //           style: TextStyle(
+                          //               fontSize: 15, fontWeight: FontWeight.bold)),
+                          //     ))
+                          )))
             ])));
   }
 }
 
-class Page2 extends StatelessWidget {
-  const Page2({super.key});
+// class Page2 extends StatelessWidget {
+//   const Page2({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: const Center(
-        child: Text('Page 2'),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(),
+//       body: const Center(
+//         child: Text('Page 2'),
+//       ),
+//     );
+//   }
+// }

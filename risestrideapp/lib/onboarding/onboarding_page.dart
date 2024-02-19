@@ -20,12 +20,19 @@ class OnBoardingPage extends StatelessWidget {
             child: Text(pObj["title"].toString(),
                 style: TextStyle(
                     color: ThemeColors.black,
-                    fontWeight: FontWeight.normal,
+                    fontWeight: FontWeight.bold,
                     fontSize: 25)),
           ),
-          Text(
-            pObj["subtitle"].toString(),
-          )
-        ]));
+          Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                  textAlign: TextAlign.left,
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.w500),
+                  pObj["subtitle"].toString())),
+          // SizedBox(height: media.width * 0.5),
+
+        ]), 
+        );
   }
 }
