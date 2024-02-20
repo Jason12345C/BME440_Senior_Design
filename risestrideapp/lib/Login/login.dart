@@ -45,6 +45,15 @@ class _LoginPage extends State<LoginPage> {
                             labelText: "Enter Password")),
                   ),
                 ),
+                GestureDetector(
+                    onTap: () {},
+                    child: const Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text("Forgot username or password?",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 11,
+                            )))),
                 const SizedBox(height: 80),
                 SizedBox(
                     width: media.width * .5,
