@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:risestride/Login/login.dart';
+// import 'package:risestride/Login/login.dart';
 import 'package:risestride/onboarding/onboarding_view.dart';
+import 'package:risestride/pages/bottomNav.dart';
 // import 'package:risestride/pages/home.dart';
 import 'common/colors_extension.dart';
 
@@ -8,7 +9,7 @@ void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: BottomNav(),
     ),
   );
 }

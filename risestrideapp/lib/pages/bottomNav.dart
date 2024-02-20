@@ -17,11 +17,37 @@ class BottomNav extends StatefulWidget {
 
 class _BottomNav extends State<BottomNav> {
   int _selectedIndex = 0;
+
+  //used to swap between pages on the bottom nav bar
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     TrainingPage(),
     ActivityPage(),
     SettingsPage(),
+  ];
+
+// used to swap titles
+  static final List<Widget> _titles = <Widget>[
+    Text(
+      'Home',
+      style: TextStyle(
+          color: ThemeColors.black, fontSize: 18, fontWeight: FontWeight.bold),
+    ),
+    Text(
+      'Training',
+      style: TextStyle(
+          color: ThemeColors.black, fontSize: 18, fontWeight: FontWeight.bold),
+    ),
+    Text(
+      'Activity',
+      style: TextStyle(
+          color: ThemeColors.black, fontSize: 18, fontWeight: FontWeight.bold),
+    ),
+    Text(
+      'Settings',
+      style: TextStyle(
+          color: ThemeColors.black, fontSize: 18, fontWeight: FontWeight.bold),
+    )
   ];
 
   @override
@@ -54,29 +80,6 @@ class _BottomNav extends State<BottomNav> {
           });
         });
   }
-
-  static const List<Widget> _titles = <Widget>[
-    Text(
-      'Home',
-      style: TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-    ),
-    Text(
-      'Training',
-      style: TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-    ),
-    Text(
-      'Activity',
-      style: TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-    ),
-    Text(
-      'Settings',
-      style: TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-    )
-  ];
 
   AppBar appBar() {
     return AppBar(

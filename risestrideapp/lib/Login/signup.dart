@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:risestride/common/colors_extension.dart';
 import 'package:risestride/pages/bottomNav.dart';
-import 'package:risestride/pages/home.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
