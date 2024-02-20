@@ -3,17 +3,17 @@ import 'package:flutter_svg/svg.dart';
 import 'package:risestride/common/colors_extension.dart';
 
 
-class TrainingPage extends StatefulWidget {
-  const TrainingPage({super.key});
+class SettingsPage extends StatefulWidget {
+  const SettingsPage({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _TrainingPage createState() => _TrainingPage();
+  _SettingsPage createState() => _SettingsPage();
 }
 
-class _TrainingPage extends State<TrainingPage> {
+class _SettingsPage extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: ThemeColors.primaryColor2);
+    return Scaffold(backgroundColor: ThemeColors.primaryColor3);
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:risestride/Login/signup.dart';
 import 'package:risestride/common/colors_extension.dart';
-import 'package:risestride/pages/home.dart';
+import 'package:risestride/pages/bottomNav.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -63,7 +63,7 @@ class _LoginPage extends State<LoginPage> {
                         // for now just go to dashboard
                         onPressed: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home()));
+                              MaterialPageRoute(builder: (context) => const BottomNav()));
                         },
                         child: Text('LOGIN',
                             style: TextStyle(
