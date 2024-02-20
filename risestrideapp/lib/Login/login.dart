@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:risestride/Login/signup.dart';
 import 'package:risestride/common/colors_extension.dart';
+import 'package:risestride/pages/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -49,12 +51,35 @@ class _LoginPage extends State<LoginPage> {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             backgroundColor: ThemeColors.primaryColor1),
-                        onPressed: () {},
+                        // for now just go to dashboard
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
                         child: Text('LOGIN',
                             style: TextStyle(
                                 color: ThemeColors.black,
                                 fontSize: 26,
-                                fontWeight: FontWeight.bold))))
+                                fontWeight: FontWeight.bold)))),
+                const SizedBox(height: 30),
+                Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                  const Text("Don't have an account?",
+                      style: TextStyle(fontSize: 11)),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignUpPage()));
+                      },
+                      child: const Padding(
+                          padding: EdgeInsets.only(left: 3),
+                          child: Text("Register now",
+                              style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 11,
+                                  decoration: TextDecoration.underline))))
+                ])
               ])),
         ));
   }
