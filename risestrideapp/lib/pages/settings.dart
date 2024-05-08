@@ -31,7 +31,7 @@ class _SettingsPage extends State<SettingsPage> {
                           SizedBox(width: 20),
                           Text("General",
                               style: TextStyle(
-                                  fontSize: 30, fontWeight: FontWeight.w400)),
+                                  fontSize: 25, fontWeight: FontWeight.w400)),
                           Spacer(),
                           Icon(Icons.navigate_next)
                         ]))),
@@ -47,7 +47,7 @@ class _SettingsPage extends State<SettingsPage> {
                           SizedBox(width: 20),
                           Text("Notifications",
                               style: TextStyle(
-                                  fontSize: 30, fontWeight: FontWeight.w400)),
+                                  fontSize: 25, fontWeight: FontWeight.w400)),
                           Spacer(),
                           Icon(Icons.navigate_next)
                         ]))),
@@ -63,7 +63,7 @@ class _SettingsPage extends State<SettingsPage> {
                           SizedBox(width: 20),
                           Text("Account",
                               style: TextStyle(
-                                  fontSize: 30, fontWeight: FontWeight.w400)),
+                                  fontSize: 25, fontWeight: FontWeight.w400)),
                           Spacer(),
                           Icon(Icons.navigate_next)
                         ]))),
@@ -80,7 +80,7 @@ class _SettingsPage extends State<SettingsPage> {
                           Text("Email Settings",
                               style: TextStyle(
                                   color: ThemeColors.black,
-                                  fontSize: 30,
+                                  fontSize: 25,
                                   fontWeight: FontWeight.w400)),
                           const Spacer(),
                           const Icon(Icons.navigate_next)
@@ -97,7 +97,7 @@ class _SettingsPage extends State<SettingsPage> {
                           SizedBox(width: 20),
                           Text("Logout",
                               style: TextStyle(
-                                  fontSize: 30, fontWeight: FontWeight.w400)),
+                                  fontSize: 25, fontWeight: FontWeight.w400)),
                           Spacer(),
                           Icon(Icons.navigate_next)
                         ]))),

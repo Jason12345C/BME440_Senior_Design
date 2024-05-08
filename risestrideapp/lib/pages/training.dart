@@ -13,7 +13,14 @@ class TrainingPage extends StatefulWidget {
 
 class _TrainingPage extends State<TrainingPage> {
   @override
+
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: ThemeColors.primaryColor2);
+
+    return Scaffold(backgroundColor: ThemeColors.primaryColor2
+    
+    
+    );
+
+    
   }
 }

@@ -37,10 +37,17 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.9
   google_nav_bar: ^5.0.6
-
+  # flutter_blue_plus: ^1.32.1
+  get: ^4.6.5
+  permission_handler: ^11.3.1
+  flutter_reactive_ble: ^5.3.1
+  syncfusion_flutter_charts: ^25.1.42
+  oscilloscope: ^0.2.0+1
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

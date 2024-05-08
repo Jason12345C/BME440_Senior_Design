@@ -9,7 +9,7 @@ void main() {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNav(),
+      home: Start(),
     ),
   );
 }
@@ -79,41 +79,7 @@ class Start extends StatelessWidget {
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 15,
-                                          fontWeight: FontWeight.bold))))
-                          // child: Container(
-                          //     width: media.width * .6,
-                          //     height: media.height * .05,
-                          //     decoration: BoxDecoration(
-                          //         gradient: LinearGradient(
-                          //             begin: Alignment.topLeft,
-                          //             end: Alignment(0.2, 1),
-                          //             colors: <Color>[
-                          //               ThemeColors.primaryColor2,
-                          //               ThemeColors.primaryColor1,
-                          //             ]),
-                          //         borderRadius: BorderRadius.circular(20)),
-                          //     child: const Padding(
-                          //       padding: EdgeInsets.all(8.0),
-                          //       child: Text("Let's Get Started!",
-                          //           textAlign: TextAlign.center,
-                          //           style: TextStyle(
-                          //               fontSize: 15, fontWeight: FontWeight.bold)),
-                          //     ))
-                          )))
+                                          fontWeight: FontWeight.bold)))))))
             ])));
   }
 }
-
-// class Page2 extends StatelessWidget {
-//   const Page2({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(),
-//       body: const Center(
-//         child: Text('Page 2'),
-//       ),
-//     );
-//   }
-// }
